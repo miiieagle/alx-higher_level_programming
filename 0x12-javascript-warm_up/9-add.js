@@ -1,16 +1,9 @@
-t x = process.argv[2];
+#!/usr/bin/node
+const a = process.argv[2];
+const b = process.argv[3];
 
-if (!parseInt(x)) {
-  console.log('Missing size');
-} else {
-  for (let i = 0; i < x; i++) {
-    let y = 0;
-    let myVar = '';
-
-    while (y < x) {
-      myVar = myVar + 'X';
-      y++;
-    }
-    console.log(myVar);
-  }
+function add (a, b) {
+  return (a + b);
 }
+
+console.log(add(parseInt(a), parseInt(b)));
